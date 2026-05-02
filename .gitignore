@@ -1,3 +1,9 @@
+# Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
 # Python
 __pycache__/
 *.py[cod]
@@ -19,12 +25,17 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+*.whl
 
 # Virtual environments
 venv/
 ENV/
 env/
 .venv/
+.conda/
 
 # IDE
 .vscode/
@@ -32,11 +43,18 @@ env/
 *.swp
 *.swo
 *~
-.DS_Store
+.project
+.classpath
+.settings/
+.metadata/
 
 # Testing
-.pytest_cache/
 .coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+tests/__pycache__/
 
 # Claude/AI artifacts
 .claude/
@@ -48,6 +66,9 @@ logs/
 # Environment
 .env
 .env.local
+.env.*
 
 # OS files
+.DS_Store
 Thumbs.db
+desktop.ini
